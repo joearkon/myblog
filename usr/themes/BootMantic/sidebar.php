@@ -62,5 +62,8 @@
             <a class="item" href="http://www.typecho.org" target="_blank">Typecho</a>
         </div>
     </section>
+	<section class="block">
+		<?php Avatars_Plugin::output("li","mostactive"); ?>
+	</section>
     <?php endif; ?>
 </div>
