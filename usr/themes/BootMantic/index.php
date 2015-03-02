@@ -20,6 +20,8 @@
             <span class="day"><?php $this->date('d'); ?></span>
         </span>
         <p class="title"><a href="<?php $this->permalink() ?>" target="_blank"><?php $this->title() ?></a></p>
+		<p class="article-meta">本文由 <?php $this->author(); ?> <?php $this->date('发表于 Y 年 m 月 d 日'); ?></p>
+		<p class="article-meta">阅读次数 <?php $this->views()._e('次') ?></p>
         <div class="ui ribbon label <?php $this->options->labelColor() ?>"><?php $this->category(','); ?></div>
             <div class="article-content <?php $this->options->labelColor() ?>">
                 <?php $this->content('阅读全文 >>'); ?>

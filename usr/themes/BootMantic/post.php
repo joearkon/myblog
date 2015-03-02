@@ -16,6 +16,7 @@
         </span>
         <p class="title"><?php $this->title() ?></p>
         <p class="article-meta">本文由 <?php $this->author(); ?> <?php $this->date('发表于 Y 年 m 月 d 日'); ?></p>
+		<p class="article-meta">阅读次数 <?php $this->views()._e('次') ?></p>
         <div class="article-content">
             <?php $this->content(); ?>
         </div>
