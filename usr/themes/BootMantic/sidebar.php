@@ -63,7 +63,7 @@
         </div>
     </section>
     <?php endif; ?>
-	<section class="block">
+	<section class="block" style="display:none">
          <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=30')->to($tags); ?>
 			<ul class="tags-list">
 			<?php while($tags->next()): ?>
