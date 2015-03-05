@@ -1,10 +1,10 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 /**
- * 自定义页脚文字插件 
+ * 页脚文字插件 
  * 
  * @package FooterInfo 
- * @author zizhuoye.chen
+ * @author czzy
  * @version 1.0.0
  * @link http://www.czzy.me/blog/
  */
