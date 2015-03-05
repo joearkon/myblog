@@ -1,7 +1,7 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 /**
- * footer info 
+ * 自定义页脚文字插件 
  * 
  * @package FooterInfo 
  * @author zizhuoye.chen
@@ -41,6 +41,9 @@ class FooterInfo_Plugin implements Typecho_Plugin_Interface
      */
     public static function config(Typecho_Widget_Helper_Form $form)
     {
+?>
+		<div style="color:#999;font-size:0.92857em;font-weight:bold;"><p><?php _e('在footer.php的页脚位置插入代码%s即可. ','<span style="color:#467B96;">&lt;?php $this->showAdditionalFooter(); ?&gt;</span>'); ?><br/>
+<?php
         /** 分类名称 */
         $name = new Typecho_Widget_Helper_Form_Element_Text('word', NULL, '', _t('页脚信息'));
         $form->addInput($name);
