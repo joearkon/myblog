@@ -7,9 +7,7 @@
             &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
             <?php _e('由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动'); ?>
         </p>
-		<p>
-			沪ICP备15008606
-		</p>
+		<?php $this->showAdditionalFooter(); ?>
     </div>
 </footer>
 

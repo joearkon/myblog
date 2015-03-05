@@ -6,7 +6,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * @package FooterInfo 
  * @author zizhuoye.chen
  * @version 1.0.0
- * @link http://typecho.org
+ * @link http://www.czzy.me/blog/
  */
 class FooterInfo_Plugin implements Typecho_Plugin_Interface
 {
@@ -19,7 +19,7 @@ class FooterInfo_Plugin implements Typecho_Plugin_Interface
      */
     public static function activate()
     {
-       $this->footer()->___footerInfo = array('FooterInfo', 'render');
+       Typecho_Plugin::factory('Widget_Archive')->footer->___showAdditionalFooter = array('FooterInfo_Plugin', 'render');
     }
     
     /**
